@@ -1,0 +1,102 @@
+/* CSS */
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #dcdcdc;
+  color: #000;
+}
+
+header > h1,
+p {
+  line-height: 2rem;
+}
+h1 {
+  font-size: 3.3rem;
+  font-weight: 700;
+}
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  background-color: #03224c;
+  font-size: 1.1rem;
+  font-weight: bold;
+  letter-spacing: 0.04rem;
+  border: none;
+  border-radius: 4px;
+  padding: 4rem;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin: 0.2rem 0.625rem;
+  min-height: 1.25rem;
+  min-width: 1.25rem;
+}
+select,
+textarea,
+input:not([type="checkbox"]):not([type="radio"]) {
+  padding-top: 0.975rem;
+  padding-bottom: 0.975rem;
+  margin: 0.65rem 0;
+  color: #03224c;
+  background-color: #fff;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s;
+  outline: none;
+}
+select:focus,
+textarea:focus,
+input:focus:not([type="checkbox"]):not([type="radio"]) {
+  box-shadow: 0 0 8px rgba(107, 142, 183, 0.9);
+  border: 1px solid rgba(107, 142, 183, 0.9);
+}
+textarea {
+  min-height: 120px;
+  padding: 0.625rem;
+  resize: vertical;
+}
+button {
+  color: #fff;
+  border: solid 1px #ff7f00;
+  background-color: #ff7f00;
+  text-transform: uppercase;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 0.75rem;
+  margin: 1rem 0;
+  width: 100%;
+}
+button:hover {
+  color: #ff7f00;
+  border: solid 1px #ff7f00;
+  background-color: #fff;
+  transition: all 1s ease-out;
+}
+.form__item {
+  margin: 1rem 0;
+}
+.form__item > label {
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.description {
+  font-size: 1.4rem;
+  letter-spacing: 1.4px;
+  margin-bottom: 5rem;
+  color: #303030;
+  text-align: center;
+}

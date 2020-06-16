@@ -1,0 +1,10 @@
+#main,
+figure {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#image {
+  max-width: 100%;
+}
