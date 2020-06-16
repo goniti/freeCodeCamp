@@ -8,7 +8,6 @@ main {
   background-color: #dcdcdc;
   color: #000;
 }
-
 header > h1,
 p {
   line-height: 2rem;
@@ -17,7 +16,6 @@ h1 {
   font-size: 3.3rem;
   font-weight: 700;
 }
-
 fieldset {
   display: flex;
   flex-direction: column;
@@ -30,12 +28,10 @@ fieldset {
   border-radius: 4px;
   padding: 4rem;
 }
-
 label {
   display: flex;
   flex-direction: column;
 }
-
 input[type="radio"],
 input[type="checkbox"] {
   margin: 0.2rem 0.625rem;
@@ -92,7 +88,6 @@ button:hover {
   justify-content: flex-end;
   align-items: center;
 }
-
 .description {
   font-size: 1.4rem;
   letter-spacing: 1.4px;
