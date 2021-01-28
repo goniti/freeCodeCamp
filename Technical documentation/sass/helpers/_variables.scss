@@ -1,0 +1,75 @@
+// Color
+
+// Main Primary color */
+// $color-primary-0: #F9F871;
+// $color-primary-1: #99D877;
+// $color-primary-2: #45B180;
+// $color-primary-3: #00877D;
+// $color-primary-4: #005C68;
+// $color-primary-5: #0F3443;
+
+$color-primary-0: #009688;
+$color-primary-1: #35a79c;
+$color-primary-2: #54b2a9;
+$color-primary-3: #65c3ba;
+$color-primary-4: #83d0c9;
+$color-primary-5: #383838;
+
+// #0f3443,
+//  #34e89e
+
+// Unit sizes
+$unit-o: 0.05rem !default;
+$unit-h: 0.1rem !default;
+$unit-1: 0.2rem !default;
+$unit-2: 0.4rem !default;
+$unit-3: 0.6rem !default;
+$unit-4: 0.8rem !default;
+$unit-5: 1rem !default;
+$unit-6: 1.2rem !default;
+$unit-7: 1.4rem !default;
+$unit-8: 1.6rem !default;
+$unit-9: 1.8rem !default;
+$unit-10: 2rem !default;
+$unit-11: 2.4rem !default;
+$unit-12: 3.2rem !default;
+$unit-13: 4rem !default;
+$unit-14: 4.5rem !default;
+$unit-15: 5rem !default;
+$unit-16: 5.7rem !default;
+$unit-17: 6rem !default;
+
+// Font sizes
+$font-size: 0.6rem !default;
+$font-size-xs: 0.5rem !default;
+$font-size-sm: 0.7rem !default;
+$font-size-md: 0.9rem !default;
+$font-size-lg: 1.2rem !default;
+$font-size-xl: 1.4rem !default;
+$font-size-xxl: 2rem !default;
+
+// Title
+$title-size: 5rem !default;
+$title-size-xs: 2.6rem !default;
+$title-size-sm: 3.4rem !default;
+$title-size-md: 4.2rem !default;
+$title-size-lg: 4.9rem !default;
+$title-size-xl: 6rem !default;
+$title-size-xxl: 6.8rem !default;
+
+// Responsive breakpoints
+$size-xs: 480px !default;
+$size-sm: 600px !default;
+$size-md: 840px !default;
+$size-lg: 960px !default;
+$size-xl: 1280px !default;
+$size-xxl: 1440px !default;
+
+$responsive-breakpoint: $size-xs !default;
+
+// Z-index
+$zindex-0: 1 !default;
+$zindex-1: 100 !default;
+$zindex-2: 200 !default;
+$zindex-3: 300 !default;
+$zindex-4: 400 !default;

@@ -1,0 +1,56 @@
+header {
+  @include flexbox;
+  @include justify-content(center);
+  @include align-items(center);
+  @include flex-direction(column);
+}
+
+main {
+  @include flexbox;
+}
+
+nav {
+  @include flexbox;
+
+  @include flex-direction(column);
+}
+
+/*Doc*/
+.documentation__container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.documentation__variant {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.documentation__example {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.documentation__more {
+  width: 100%;
+}
+
+.documentation__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+
+/*Variant*/
+
+.frame__code {
+  @include flexbox;
+}
+.variant__code {
+  @include flex-direction(column);
+}
+.variant__codeline {
+  @include flexbox;
+}

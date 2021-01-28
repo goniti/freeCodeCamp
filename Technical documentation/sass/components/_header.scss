@@ -1,0 +1,25 @@
+header {
+  height: 100vh;
+  background: $color-primary-0; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    $color-primary-3,
+    $color-primary-0
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    $color-primary-3,
+    $color-primary-0
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.header__title {
+  font-size: $title-size;
+  color: $color-primary-0;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.header__subtitle {
+  color: $color-primary-3;
+  font-size: $title-size-sm;
+}

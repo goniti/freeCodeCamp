@@ -1,0 +1,76 @@
+.navigation__link {
+  font-size: $font-size-md;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: $unit-4 $unit-12;
+  border: solid $color-primary-4;
+  border-width: 0px 1px 1px 1px;
+  color: $color-primary-4;
+  @include transition(all 0.3s ease-out);
+
+  &:hover {
+    border: solid 0 1px 1px 1px $color-primary-5;
+    color: $color-primary-5;
+    background-color: $color-primary-4;
+    @include transition(all 0.3s ease-in);
+  }
+
+  &--submenu {
+    margin: 0 -1.4rem;
+    padding: $unit-4 $unit-5;
+    border: 1px solid $color-primary-5;
+    background-color: $color-primary-4;
+    color: $color-primary-5;
+    text-decoration: none;
+    &:hover {
+      color: $color-primary-4;
+      border-color: $color-primary-5;
+      background-color: $color-primary-5;
+    }
+  }
+}
+.navigation__items {
+  @extend .navigation__link;
+  /*Accordion Submenu*/
+  & > input {
+    display: none;
+
+    & + label {
+      @include transition(all 0.2s ease-out);
+      @include flexbox;
+      cursor: pointer;
+
+      &::after {
+        content: "\276F";
+        @include flexbox;
+        @include justify-content(flex-end);
+        width: 100%;
+        margin: 0 -1.25rem;
+      }
+      & ~ a {
+        list-style: none;
+        display: none;
+      }
+    }
+
+    &:checked + label {
+      margin: 0 -1.25rem 0.6rem -1.92rem;
+      & ~ a {
+        display: flex;
+      }
+      &::after {
+        transform: rotate(90deg);
+        @include transition(all 0.2s ease);
+        @include justify-content(center);
+        margin: -1.25rem 0rem;
+      }
+      &::before {
+        content: "";
+        border: solid $color-primary-4;
+        padding: 0rem 17px 0rem 17px;
+        border-width: 0 0 0 6px;
+        margin: -0.65rem -1.25rem;
+      }
+    }
+  }
+}

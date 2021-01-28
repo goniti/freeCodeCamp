@@ -1,0 +1,18 @@
+.frame__code {
+  @extend .example__code;
+
+  &--pun {
+    color: #2b2e2b;
+  }
+  &--tag {
+    color: #2ffc40;
+  }
+  &--type {
+    color: #fd9c4d;
+  }
+  &--string {
+    &-colored {
+      color: #d6fc2f;
+    }
+  }
+}

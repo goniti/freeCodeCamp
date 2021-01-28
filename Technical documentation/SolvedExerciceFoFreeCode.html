@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="./css/app.css" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css2?family=Kodchasan:wght@200;400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <title>Document</title>
+</head>
+
+<body>
+  <header>
+    <h1 class="header__title">Technical Documentation</h1>
+    <h2 class="header__subtitle">HTML - CSS & JS</h2>
+  </header>
+  <main id="main-doc">
+    <nav id="navbar" class="navigation">
+      <header>Technical Test</header>
+      <!-- Item Menu 1 -->
+      <a href="#element" class="navigation__link">Element</a>
+      <!-- Item Menu 2 -->
+      <a href="#element" class="navigation__link">Media Queries</a>
+      <!-- Item Menu 3 -->
+      <div class="navigation__items">
+        <input type="checkbox" name="" id="navigation--category-1" />
+        <label for="navigation--category-1">FreeCodeCamp</label>
+        <a href="#element_header" class="navigation__link--submenu nav-link">element header</a>
+        <a href="#section_media" class="navigation__link--submenu nav-link">section media</a>
+        <a href="#section_component" class="navigation__link--submenu nav-link">section component</a>
+        <a href="#section_sass" class="navigation__link--submenu nav-link">section sass</a>
+        <a href="#section_pratices" class="navigation__link--submenu nav-link">section pratices</a>
+      </div>
+      <!-- Item Menu 4 -->
+      <div class="navigation__items">
+        <input type="checkbox" name="" id="navigation--category-2" />
+        <label for="navigation--category-2">SASS</label>
+        <a href="#element" class="navigation__link--submenu">Mixin</a>
+        <a href="#element" class="navigation__link--submenu">Variables</a>
+        <a href="#element" class="navigation__link--submenu">Function</a>
+      </div>
+      <!-- Item Menu 5 -->
+      <a href="#element" class="navigation__link">jQuery</a>
+      <!-- Item Menu 6 -->
+      <div class="navigation__items">
+        <input type="checkbox" name="" id="navigation--category-3" />
+        <label for="navigation--category-3">Practices</label>
+        <a href="#element" class="navigation__link--submenu">BEM</a>
+        <a href="#element" class="navigation__link--submenu">SMACSS</a>
+        <a href="#element" class="navigation__link--submenu">DRY</a>
+        <a href="#element" class="navigation__link--submenu">OOCSS</a>
+      </div>
+    </nav>
+
+    <!-- Element -->
+    <section id="element_header" class="main-section section__element">
+      <header id="element header">element header</header>
+      <div class="documentation__wrapper">
+        <div class="documentation__title">
+          <h3>Element</h3>
+        </div>
+        <div class="documentation__container">
+          <div class="documentation__content">
+            <hr>
+            <div class="documentation__example">
+              <div class="content__title">
+                <h5>example</h5>
+              </div>
+              <div id="element--example" class="content__inner--example">
+
+                <p class="example__code">
+                  This is <b>bold</b> and this is <strong>strong</strong>. This
+                  is <i>italic</i> and this is <em>emphasized</em>. This is
+                  <sup>superscript text</sup> and this is
+                  <sub>subscript text</sub> . This is <u>underlined</u> and this
+                  is <code>code: for (;;) { ... }</code>. Finally, this is a
+                  <a href="#element--example">link</a> .
+                </p>
+                <h1>Heading One</h1>
+                <h2>Heading Two</h2>
+                <h3>Heading Three</h3>
+                <h4>Heading Four</h4>
+                <h5>Heading Five</h5>
+                <h6>Heading Six</h6>
+              </div>
+            </div>
+            <hr>
+            <div class="documentation__variant">
+              <div class="content__title">
+                <h5>variant</h5>
+              </div>
+              <div class="wrapper__variant">
+                <!--Element Audio -->
+                <div class="container__variant">
+                  <div class="content__variant--description">
+                    <pre>
+                    <code class="frame__code">
+                  <span class="frame__code--pun">-</span>
+                  <span class="frame__code--space"> </span>
+                  <span class="frame__code--type">Element</span>
+                  <span class="frame__code--space"> </span>
+                  <span class="frame__code--tag"><code>&lt;audio&gt;</code></span>
+                  <span class="frame__code--space"> </span>
+                  <span class="frame__code--string-colored">is used to embed sound content in documents :</span>
+                </code>
+                </pre>
+                  </div>
+                  <div class="content__variant--demo">
+                    <p>Demo :</p>
+                    <audio controls src="https://www.youtube.com/audiolibrary_download?vid=50d0f7e1dccfb6b3">
+                      <p>Your browser does not support the audio element.</p>
+                    </audio>
+                  </div>
+                  <div class="content__variant--code">
+                    <p>Code :</p>
+                    <pre>
+                      <code class="variant__code frame__code">
+                        <div class="variant__codeline">
+                        <span class="frame__code--tag">&lt;audio</span> 
+                        <span class="frame__code--space"> </span>
+                        <span class="frame__code--type">controls</span>
+                        <span class="frame__code--space"> </span>
+                        <span class="frame__code--type">src</span>
+                        <span class="frame__code--pun">=</span>
+                        <span class="frame__code--string-colored">&quot;/media/examples/t-rex-roar.mp3&quot;</span>
+                        <span class="frame__code--tag">&gt;</span>
+                      </div>
+                      
+                      <div class="variant__codeline">
+                        <span class="frame__code--space"> </span>
+                        <span class="frame__code--space"> </span>
+                        <span class="frame__code--tag">&lt;p&gt;</span>
+                        <span class="frame__code--string">Your browser does not support the audio element.</span>
+                        <span class="frame__code--tag">&lt;/p&gt;</span>
+                      </div>
+                      <div class="variant__codeline">
+                        <span class="frame__code--tag">&lt;/audio&gt;</span>
+                      </div>
+                      </code>      
+                    </pre>
+                  </div>
+
+                  <div class="lorem">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus vel modi earum asperiores nostrum doloremque aperiam aut sequi sint. Porro, vel! Modi, soluta voluptate assumenda natus neque at sed cumque?</p>
+                    <p>Nemo fuga, architecto, omnis adipisci qui cupiditate perferendis voluptatem ex sint itaque quos enim commodi odit. Nam necessitatibus ea voluptas eum nostrum fuga deserunt sapiente magni voluptates saepe, ipsum itaque?</p>
+                    <p>Ullam illum eaque vitae repellendus, voluptas vero impedit? Veniam possimus recusandae pariatur ab explicabo voluptates deserunt dolorem expedita, doloribus id vel corporis maiores vitae, ut ratione voluptatem corrupti, numquam porro!</p>
+                    <p>Vero tenetur enim explicabo aspernatur blanditiis recusandae, tempora et temporibus libero impedit? Ab magni perferendis veritatis, voluptates animi, commodi perspiciatis ipsum pariatur quibusdam sapiente ea laudantium in expedita aliquid. Amet?</p>
+                    <p>Quisquam aliquid vel sunt placeat velit voluptate, corrupti delectus, voluptatibus numquam nemo hic, id assumenda asperiores officiis. Aliquam nulla, deserunt natus dolorem suscipit asperiores voluptate amet ut aperiam quidem inventore!</p>
+                    <p>Obcaecati corrupti aut, tempore dolore nostrum exercitationem molestias vero sed. A, dolorum? Autem eos aliquid inventore ratione, et dolorem sunt quo deleniti officiis similique quam numquam illo accusamus delectus assumenda.</p>
+                    <p>Quod vero repellendus veritatis dignissimos distinctio animi, hic tenetur? Facere fuga est molestias libero quis voluptatem quo? Mollitia reiciendis dolorem unde officiis. Numquam expedita eos totam corporis, magni eveniet necessitatibus.</p>
+                    <p>Modi, voluptatibus cumque cum soluta aut iste maxime! Repudiandae, debitis eveniet delectus omnis tempora possimus temporibus ratione? Saepe inventore quis veniam sunt excepturi officia, numquam amet aspernatur tempora molestias quam.</p>
+                    <p>Nobis reprehenderit dolores modi enim magnam! Quidem, ipsa dolor! Iste labore in laudantium quia impedit provident quos minima iusto enim? Mollitia fuga fugit quo! Quaerat aliquam similique tempore alias. Aut.</p>
+                    <p>Voluptatem illum sed laboriosam! Ad perspiciatis inventore eos, voluptatem, eveniet veritatis fuga harum accusantium quo maiores dicta recusandae. Modi non repellat odit corrupti porro sed accusantium vitae reprehenderit magni maxime!</p>
+                  </div>
+
+                  <div class="list">
+                    <ul>
+                      <li>item-list-1</li>
+                      <li>item-list-2</li>
+                      <li>item-list-3</li>
+                      <li>item-list-4</li>
+                      <li>item-list-5</li>
+                    </ul>
+                  </div>
+                </div>
+
+
+                <!--Element Video -->
+                <div class="container__variant">
+                  <div class="content__variant--description">
+                    <pre>
+                      <code class="frame__code">
+                    <span class="frame__code--pun">-</span>
+                    <span class="frame__code--space"> </span>
+                    <span class="frame__code--type">Element</span>
+                    <span class="frame__code--space"> </span>
+                    <span class="frame__code--tag"><code>&lt;video&gt;</code></span>
+                    <span class="frame__code--space"> </span>
+                    <span class="frame__code--string-colored">embeds a media player which supports video playback into the document :</span>
+                  </code>
+                  </pre>
+                  </div>
+                  <div class="content__variant--demo">
+                    <p>Demo :</p>
+                    <video controls width="450">
+                      <source src=" http://dl5.webmfiles.org/big-buck-bunny_trailer.webm" type="video/mp4">
+                      <p>
+                        Sorry, your browser doesn't support embedded videos.
+                      </p>
+                    </video>
+                  </div>
+                  <div class="content__variant--code">
+                    <p>Code :</p>
+                    <pre>
+                        <code class="variant__code frame__code">
+                          <div class="variant__codeline">
+                          <span class="frame__code--tag">&lt;video</span> 
+                          <span class="frame__code--space"> </span>
+                          <span class="frame__code--type">controls</span>
+                          <span class="frame__code--space"> </span>
+                          <span class="frame__code--type">width</span>
+                          <span class="frame__code--pun">=</span>
+                          <span class="frame__code--string-colored">&quot;250&quot;</span>
+                          <span class="frame__code--tag">&gt;</span>
+                        </div>
+                        <div class="variant__codeline">
+                          <span class="frame__code--tag">&lt;source</span> 
+                          <span class="frame__code--space"> </span>
+                          <span class="frame__code--type">src</span>
+                          <span class="frame__code--pun">=</span>
+                          <span class="frame__code--string-colored">&quot;/media/examples/flower.webm&quot;</span>
+                          <span class="frame__code--space"> </span>
+                          <span class="frame__code--type">type</span>
+                          <span class="frame__code--pun">=</span>
+                          <span class="frame__code--string-colored">&quot;video/webm&quot;</span>
+                          <span class="frame__code--tag">&gt;</span>
+                        </div>
+                        <div class="variant__codeline">
+                          <span class="frame__code--tag">&lt;source</span> 
+                          <span class="frame__code--space"> </span>
+                          <span class="frame__code--type">src</span>
+                          <span class="frame__code--pun">=</span>
+                          <span class="frame__code--string-colored">&quot;/media/examples/flower.mp4&quot;</span>
+                          <span class="frame__code--space"> </span>
+                          <span class="frame__code--type">type</span>
+                          <span class="frame__code--pun">=</span>
+                          <span class="frame__code--string-colored">&quot;video/mp4&quot;</span>
+                          <span class="frame__code--tag">&gt;</span>
+                        </div>
+                        <div class="variant__codeline">
+                          <span class="frame__code--space"> </span>
+                          <span class="frame__code--space"> </span>
+                          <span class="frame__code--space"> </span>
+                          <span class="frame__code--space"> </span>
+                          <span class="frame__code--tag">&lt;p&gt;</span>
+                          <span class="frame__code--string">Sorry, your browser doesn't support embedded videos.</span>
+                          <span class="frame__code--tag">&lt;/p&gt;</span>
+                        </div>
+                        <div class="variant__codeline">
+                          <span class="frame__code--tag">&lt;/video&gt;</span>
+                        </div>
+                        </code>      
+                      </pre>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+            <hr>
+            <div class="documentation__more">
+              <div class="content__title">
+                <h5>more</h5>
+              </div>
+              <div class="content__inner--more">
+
+                <table class="more__table" summary="liste des differentes doc dans un tableau">
+                  <caption>Source des documentations </caption>
+                  <thead>
+                    <tr>
+                      <th>Name</th>
+                      <th>Link</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Element HTML</td>
+                      <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">Documentation Mozilla</a></td>
+                    </tr>
+                    <tr>
+                      <td>Custom Video Player</td>
+                      <td><a href="https://developer.mozilla.org/en-US/docs/Web/Guide/Audio_and_video_delivery/Video_player_styling_basics">Documentation Mozilla</a></td>
+                    </tr>
+                    <tr>
+                      <td>Custom Video Player</td>
+                      <td><a href="https://videojs.com/">JS Video Plugins</a></td>
+                    </tr>
+
+                    
+                  </tbody>
+                
+                  
+                </table>
+
+
+              </div>
+            </div>
+            <hr>
+          </div>
+        </div>
+    </section>
+    <!-- Media Queries -->
+    <section id="section_media" class="main-section section__media">
+      <header id="section media">section media</header>
+
+      <div class="documentation__wrapper">
+        <div class="documentation__title">
+          <h3>Media Queries</h3>
+        </div>
+        <div class="documentation__container">
+          <div class="documentation__example">
+            <div class="content__title"><h4>example</h4></div>
+            <div class="content__inner--example">
+              ///content example
+            </div>
+          </div>
+          <div class="documentation__variant">
+            <div class="content__title"><h4>variant</h4></div>
+            <div class="content__inner--variant">
+              /////content variant
+            </div>
+          </div>
+          <div class="documentation__more">
+            <div class="content__title"><h4>more</h4></div>
+            <div class="content__inner--more">
+              <div class="content__link">
+               ///// sources
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Component -->
+    <section id="section_component" class="main-section section__">
+      <header id="section component">section component</header>
+
+      <div class="documentation__wrapper">
+        <div class="documentation__title">
+          ///title
+          <h3></h3>
+        </div>
+        <div class="documentation__container">
+          <div class="documentation__example">
+            <div class="content__title"><h4>example</h4></div>
+            <div class="content__inner--example">
+              ///content example
+            </div>
+          </div>
+          <div class="documentation__variant">
+            <div class="content__title"><h4>variant</h4></div>
+            <div class="content__inner--variant">
+              /////content variant
+            </div>
+          </div>
+          <div class="documentation__more">
+            <div class="content__title"><h4>more</h4></div>
+            <div class="content__inner--more">
+              <div class="content__link">
+               ///// sources
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Sass -->
+    <section id="section_sass" class="main-section section__">
+      <header id="section sass">section sass</header>
+      <div class="documentation__wrapper">
+        <div class="documentation__title">
+          ///title
+          <h3></h3>
+        </div>
+        <div class="documentation__container">
+          <div class="documentation__example">
+            <div class="content__title"><h4>example</h4></div>
+            <div class="content__inner--example">
+              ///content example
+            </div>
+          </div>
+          <div class="documentation__variant">
+            <div class="content__title"><h4>variant</h4></div>
+            <div class="content__inner--variant">
+              /////content variant
+            </div>
+          </div>
+          <div class="documentation__more">
+            <div class="content__title"><h4>more</h4></div>
+            <div class="content__inner--more">
+              <div class="content__link">
+               ///// sources
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Pratices -->
+    <section id="section_pratices" class="main-section section__">
+      <header id="section pratices">section pratices</header>
+
+      <div class="documentation__wrapper">
+        <div class="documentation__title">
+          ///title
+          <h3></h3>
+        </div>
+        <div class="documentation__container">
+          <div class="documentation__example">
+            <div class="content__title"><h4>example</h4></div>
+            <div class="content__inner--example">
+              ///content example
+            </div>
+          </div>
+          <div class="documentation__variant">
+            <div class="content__title"><h4>variant</h4></div>
+            <div class="content__inner--variant">
+              /////content variant
+            </div>
+          </div>
+          <div class="documentation__more">
+            <div class="content__title"><h4>more</h4></div>
+            <div class="content__inner--more">
+              <div class="content__link">
+               ///// sources
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>
+
+<!--
+<section id="" class="section__">
+  <div class="documentation__wrapper">
+    <div class="documentation__title">
+      ///title
+      <h3></h3>
+    </div>
+    <div class="documentation__container">
+      <div class="documentation__example">
+        <div class="content__title"><h4>example</h4></div>
+        <div class="content__inner--example">
+          ///content example
+        </div>
+      </div>
+      <div class="documentation__variant">
+        <div class="content__title"><h4>variant</h4></div>
+        <div class="content__inner--variant">
+          /////content variant
+        </div>
+      </div>
+      <div class="documentation__more">
+        <div class="content__title"><h4>more</h4></div>
+        <div class="content__inner--more">
+          <div class="content__link">
+           ///// sources
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+-->

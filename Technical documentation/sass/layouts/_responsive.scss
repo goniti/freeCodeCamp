@@ -1,0 +1,136 @@
+// Breakpoints.
+
+@include breakpoints(
+  (
+    // xlarge: (
+      //   1281px,
+      //   1680px,
+      // ),
+      // large: (
+      //   981px,
+      //   1280px,
+      // ),
+      // medium: (
+      //   737px,
+      //   980px,
+      // ),
+      // small: (
+      //   481px,
+      //   736px,
+      // ),
+      // xsmall: (
+      //   null,
+      //   480px,
+      // ),
+      xlarge: ($size-xl, $size-xxl),
+    large: ($size-md, $size-lg),
+    medium: ($size-sm, $size-md),
+    small: ($size-xs, $size-sm),
+    xsmall: (null, $size-xs)
+  )
+);
+
+// bigFormat
+@include breakpoint(">xlarge") {
+  h1 {
+    font-size: $title-size-xxl;
+  }
+  h2 {
+    font-size: $title-size-xl;
+  }
+  h3 {
+    font-size: $title-size-lg;
+  }
+  h4 {
+    font-size: $title-size-md;
+  }
+  h5 {
+    font-size: $title-size-sm;
+  }
+  h6 {
+    font-size: $title-size-xs;
+  }
+  .header {
+    &__title {
+      font-size: $title-size;
+    }
+    &__subtitle {
+      font-size: $title-size-sm;
+    }
+  }
+}
+// xlarge
+@include breakpoint("<=xlarge") {
+  h1 {
+    font-size: $title-size-xl;
+  }
+  .header {
+    &__title {
+      font-size: $title-size-md;
+    }
+    &__subtitle {
+      font-size: $title-size-xs;
+    }
+  }
+}
+
+// large
+@include breakpoint("<=large") {
+  h1 {
+    font-size: $title-size-lg;
+  }
+  .header {
+    &__title {
+      font-size: $title-size-sm;
+    }
+    &__subtitle {
+      font-size: $font-size-xl;
+    }
+  }
+}
+
+// medium
+@include breakpoint("<=medium") {
+  h1 {
+    font-size: $title-size-md;
+  }
+  .header {
+    &__title {
+      font-size: $title-size-xs;
+    }
+    &__subtitle {
+      font-size: $font-size-lg;
+    }
+  }
+}
+
+// small
+@include breakpoint("<=small") {
+  h1 {
+    font-size: $title-size-sm;
+  }
+  .header {
+    &__title {
+      font-size: $font-size-xxl;
+    }
+    &__subtitle {
+      font-size: $font-size-xl;
+    }
+  }
+}
+
+// xsmall
+@include breakpoint("<=xsmall") {
+  h1 {
+    font-size: $title-size-xs;
+  }
+
+  .header {
+    &__title {
+      font-size: $font-size-xxl;
+    }
+    &__subtitle {
+      font-size: $title-size-xs;
+    }
+  }
+}
